@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="./assets/js/color-modes.js"></script>
+  <head><script src="./assets/js/color-modes.js">
+
+
+  </script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -160,6 +163,37 @@
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#home">Home</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#agenda">Agenda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#topics">Topics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#submission">Submission Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#date">Important Date</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#organizer">Organizing Committee</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#accepted_paper">Accepted Paper</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#speaker">Speakers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#pc">Program Committee</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#student_volunteer">Volunteers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#pics">Photos</a>
+          </li>
+
         </ul>
       </div>
     </div>
@@ -168,13 +202,44 @@
 
 <main>
 
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- <img class="bd-placeholder-img" width="800px" height="100%" src="https://img2.baidu.com/it/u=178110444,4197419183&fm=253&fmt=auto&app=120&f=JPEG?w=1422&h=800" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="800px" height="100%" fill="var(--bs-secondary-color)"/> -->
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Pudong_Shanghai_November_2017_panorama.jpg/2880px-Pudong_Shanghai_November_2017_panorama.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+          <image xlink:href="https://img2.baidu.com/it/u=178110444,4197419183&fm=253&fmt=auto&app=120&f=JPEG?w=1422&h=800" width="100%" class="img-fluid"></image>
+        </svg>
+        <div class="container">
+          <div class="carousel-caption" style="color: whitesmoke;">
+            <h1>ICDM 2023's Workshop</h1>
+            <p>The First Workshop on Data-Centric AI (DCAI): shifting research focus from model to data.</p>
+            <p><a class="btn btn-lg btn-primary" href="http://www.cloud-conf.net/icdm2023/index.html">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
   <!-- Marketing messaging and featurettes
   ================================================== -->
   <!-- Wrap the rest of the page in another container to center all the content. -->
 
   <div class="container marketing">
-
-
 
     <!-- START THE FEATURETTES -->
     <h1 id="home">Home</h1>
@@ -182,49 +247,518 @@
     <hr class="featurette-divider">
 
     <div class="row featurette">
-      <div class="col-md-12">
-        <p class="lead">
-          Machine learning focuses on developing models for datasets, but real-world data is often messy. Improving the dataset itself can enhance performance. Data-Centric AI (DCAI) studies systematic techniques to improve datasets, resulting in significant improvements in ML applications. DCAI treats data improvement as a systematic engineering discipline, unlike traditional ad hoc methods.
-DCAI shifts the focus from modeling to the underlying data. Common model architectures dominate tasks, but dataset building and usage are labor-intensive and expensive. The DCAI movement aims to develop efficient open data engineering tools, addressing the lack of infrastructure and best practices.
-This workshop fosters an interdisciplinary DCAI community to tackle practical data problems. It covers collection, labeling, preprocessing, augmentation, quality evaluation, data debt, and governance. The workshop shapes the DCAI movement that influences the future of AI and ML. Interested parties can submit papers to contribute to shaping this future.
+      <div class="col-md-12" >
+        <p class="lead" style="margin-top: -50px;">Machine learning focuses on developing models for datasets, but real-world data is often messy. Improving the dataset itself can be a better way to enhance performance instead of just improving the models. Data-Centric AI (DCAI) is an emerging field that systematically improves datasets, resulting in significant improvements in ML applications. DCAI treats data improvement as an engineering discipline, offering a shift in focus from modeling to the underlying data. This workshop aims to build an interdisciplinary DCAI community to tackle data problems such as collection, labeling, preprocessing, quality evaluation, debt, and governance. Interested parties can shape the future of AI and ML by submitting papers in response to the call for papers.
         </p>
       </div>
+
     </div>
+    <hr class="featurette-divider" >
 
-    <hr class="featurette-divider">
+    <h1 id="agenda">Agenda</h1>
 
-    <!-- START THE FEATURETTES -->
-    <h1 id="home">Workshops</h1>
+    <hr class="featurette-divider" >
+    <style>
+      table,table tr th, table tr td { border:1px solid #000000; height: 50px;white-space: pre-line;}
+      table { width: 1100px; min-height: 25px; line-height: 25px; text-align: center; border-collapse: collapse;}
+      th:nth-child(2), td:nth-child(2) {
+            width: 300px;
+        }  
+      th:nth-child(3), td:nth-child(3) {
+            width: 130px;
+        }
+      th:nth-child(5), td:nth-child(5) {
+            width: 300px;
+        } 
+      th:nth-child(1), td:nth-child(1) {
+            width: 150px;
+        }    
+  </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+            // 获取北京时间
+            var beijingTime = getBeijingTime();
+            var beijingDate = getBeijingDate();
 
-    <hr class="featurette-divider">
+            // 转换为用户本地时间
+            var userLocalTime = convertToUserTimeZone(beijingTime);
+            var userLocalDate = convertToUserTimeZone(beijingDate);
+
+            // 在表格中显示转换后的时间和日期
+            document.getElementById("dateTimeCell").textContent = beijingDate + " " + beijingTime + " /" + userLocalDate + " " + userLocalTime;
+        });
+
+        // 获取北京时间的函数
+        function getBeijingTime() {
+            var options = {
+                timeZone: 'Asia/Shanghai', // 北京时区
+                hour12: false,
+                hour: 'numeric',
+                minute: 'numeric',
+                second: 'numeric'
+            };
+
+            // 使用Date对象和时区信息获取北京时间
+            return new Date().toLocaleTimeString('en-US', options);
+        }
+
+        // 获取北京日期的函数
+        function getBeijingDate() {
+            var options = {
+                timeZone: 'Asia/Shanghai', // 北京时区
+                year: 'numeric',
+                month: 'numeric',
+                day: 'numeric'
+            };
+
+            // 使用Date对象和时区信息获取北京日期
+            return new Date().toLocaleDateString('en-US', options);
+        }
+
+        // 将时间和日期转换为用户本地时间的函数
+        function convertToUserTimeZone(dateTime) {
+            var userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+            var options = {
+                timeZone: userTimeZone,
+                hour12: false,
+                hour: 'numeric',
+                minute: 'numeric',
+                second: 'numeric',
+                year: 'numeric',
+                month: 'numeric',
+                day: 'numeric'
+            };
+
+            // 使用Date对象和时区信息将北京时间和日期转换为用户本地时间
+            return new Date(dateTime).toLocaleString('en-US', options);
+        }
+  </script>
+
+    <table border="1">
+      <tbody>
+        <tr>
+          <td  colspan="5">Date: Dec. 1st, Location: Room 6, Zoom link: https://zoom.us/j/91649466943, Password: 202312</td>
+      </tr>
+        <tr>
+          <td>Time (Beijing Time)</td>
+          <td>Title</td>
+          <td>Attendance</td>
+          <td>Format</td>
+          <td>Presenter/Author</td>
+        </tr>
+        <tr>
+          <td>8:00-8:05</td>
+          <td>Opening Remarks</td>
+          <td></td>
+          <td></td>
+          <td>Organizers</td>
+        </tr>
+        <tr>
+          <td>8:05-8:40</td>
+          <td>Keynote Presentation: Addressing Data Quality Issues with Data-Centric AI Approaches</td>
+          <td>Video</td>
+          <td>30 min + 5 min QA session</td>
+          <td>Jae-Gil Lee</td>
+        </tr>
+        <tr>
+          <td>8:40-9:15</td>
+          <td>Keynote Presentation: Data-Efficient Fine-Tuning and Adaptation of Language Models</td>
+          <td>Video</td>
+          <td>30 min + 5 min QA session</td>
+          <td>Chao Zhang</td>
+        </tr>
+        <tr>
+          <td>9:15-9:30</td>
+          <td>Resolving the Imbalance Issue in Hierarchical Disciplinary Topic Inference via LLM-based Data Augmentation</td>
+          <td>In-person</td>
+          <td>12 min + 3 min QA session</td>
+          <td>Xunxin Cai, Meng Xiao, Zhiyuan Ning, <br>and Yuanchun Zhou</td>
+        </tr>
+        <tr>
+          <td>9:30-9:45</td>
+          <td>Alternative Speech: Complementary<br>Method to Counter-Narrative<br>for Better Discourse</td>
+          <td>In-person</td>
+          <td>12 min + 3 min QA session</td>
+          <td>Seungyoon Lee, Dahyun Jung, Chanjun <br>Park, Seolhwa Lee, and Heuiseok Lim</td>
+        </tr>
+        <tr>
+          <td>9:45-10:00</td>
+          <td>Deep Outdated Fact Detection<br>in Knowledge Graphs</td>
+          <td>In-person</td>
+          <td>12 min + 3 min QA session</td>
+          <td>Huiling Tu, Shuo Yu, Vidya Saikrishna,<br>Feng Xia, and Karin Verspoor</td>
+        </tr>
+        <tr>
+          <td>10:00-10:15</td>
+          <td>Silence Speaks Volumes: Re-weighting<br>Techniques for Under-Represented<br>Users in Fake News Detection</td>
+          <td>Video</td>
+          <td>12 min + 3 min QA session</td>
+          <td>Mansooreh Karami, David Mosallanezhad, Paras Sheth, and Huan Liu</td>
+        </tr>
+        <tr>
+          <td>10:15-10:30</td>
+          <td>Guided Nearest-Neighbor Contrastive<br>Learning with Prior Knowledge<br>For Hotel Recognition</td>
+          <td>Video</td>
+          <td>12 min + 3 min QA session</td>
+          <td>Aarash Feizi, Randall Balestriero, Arantxa Casanova, Adriana Romero-Soriano, and Reihaneh Rabbany</td>
+        </tr>
+        <tr>
+          <td>10:30-10:35</td>
+          <td>Closing Remarks</td>
+          <td></td>
+          <td></td>
+          <td>Organizers</td>
+        </tr>
+      </tbody>
+      <colgroup>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+      </colgroup>
+    </table>
+
+
+
+    <hr class="featurette-divider" >
+
+    <h1 id="topics">Topics</h1>
+
+    <hr class="featurette-divider" >
+
     <div class="row featurette">
       <div class="col-md-12">
-        <h3><a  href="https://data-centric-ai-dev.github.io/ICDM/">The 1st workshop on data-centric AI at ICDM 2023</a></h3>
-      </div>
-      <div class="col-md-12">
-        <h3><a  href="https://data-centric-ai-dev.github.io/BigData/">The 2nd workshop on data-centric AI at BigData 2023</a></h3>
-      </div>
-      <div class="col-md-12">
-        <h3><a  href="https://data-centric-ai-dev.github.io/BigData2024/">The 3rd workshop on data-centric AI at BigData 2024</a></h3>
-      </div>
-      <div class="col-md-12">
-        <h3><a  href="https://data-centric-ai-dev.github.io/CIKM2024/">The 4th workshop on data-centric AI at CIKM 2024</a></h3>
-      </div>
-      <div class="col-md-12">
-        <h3><a  href="https://data-centric-ai-dev.github.io/ICDM2024/">The 5th workshop on data-centric AI at ICDM 2024</a></h3>
+       <p style="margin-top: -50px;"> <b>We welcome a wide array of submissions focused on data-centric AI, encompassing topics such as theories, algorithms, applications, systems, and tools. These topics include but are not limited to:</b></p>
+
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-primary"><b>Automated Data Science Methods</b>
+                <ul class="list-group list-group-numbered">
+                    <li class="list-group-item">Data cleaning, denoising, and interpolation</li>
+                    <li class="list-group-item">Feature selection and generation</li>
+                    <li class="list-group-item">Data refinement, feature-instance joint selection</li>
+                    <li class="list-group-item">Data quality improvement, representation learning, reconstruction</li>
+                    <li class="list-group-item">Outlier detection and removal</li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="list-group" style="margin-top: 16px;">
+            <li class="list-group-item list-group-item-warning"><b>Tools and Methodologies for Expediting Open-source Dataset Preparation</b>
+                <ul class="list-group list-group-numbered">
+                    <li class="list-group-item">Time acceleration tools for sourcing and preparing high-quality data</li>
+                    <li class="list-group-item">Tools for consistent data labeling, data quality improvement</li>
+                    <li class="list-group-item">Tools for generating high-quality supervised learning training data</li>
+                    <li class="list-group-item">Tools for dataset control, high-level editing, searching public resources</li>
+                    <li class="list-group-item">Tools for dataset feedback incorporation, coverage understanding, editing</li>
+                    <li class="list-group-item">Dataset importers and exporters for easy data combination and consumption</li>
+                    <li class="list-group-item">System architectures and interfaces for dataset tool composition</li>
+                </ul>
+            </li>
+          </ul>
+
+          <ul class="list-group" style="margin-top: 16px;">
+            <li class="list-group-item list-group-item-danger"><b>Algorithms for Handling Limited Labeled Data and Label Efficiency</b>
+                <ul class="list-group list-group-numbered">
+                    <li class="list-group-item">Data selection techniques, semi-supervised learning, few-shot learning</li>
+                    <li class="list-group-item">Weak supervision methods, transfer learning, self-supervised learning approaches</li>
+                </ul>
+            </li>
+          </ul>
+
+          <ul class="list-group" style="margin-top: 16px;">
+            <li class="list-group-item list-group-item-success"><b>Algorithms for Dealing with Biased, Shifted, Drifted, and Out of Distribution Data</b>
+                <ul class="list-group list-group-numbered">
+                    <li class="list-group-item">Datasets for bias evaluation and analysis</li>
+                    <li class="list-group-item">Algorithms for automated bias elimination, model training with biased data</li>
+                </ul>
+            </li>
+        </ul>
+
       </div>
     </div>
 
+    <hr class="featurette-divider">
+
+    <h1 id="submission">Submission Details</h1>
+
+    <hr class="featurette-divider">
+
+    <div class="col-md-12" style="margin-top: -50px;">
+      <b>
+        We invite the submission of regular research papers (max 6 pages plus 2 extra pages), including all content and references. Submissions must be in PDF format, and formatted according to <a href="https://www.ieee.org/conferences/publishing/templates.html">the new Standard IEEE Conference Proceedings Template</a>.
+
+        Submitted papers will be assessed based on their novelty, technical quality, potential impact, insightfulness, depth, clarity, and reproducibility. 
+
+        All the papers are required to be submitted via the <a href="https://wi-lab.com/cyberchair/2023/icdm23/scripts/submit.php?subarea=S25&undisplay_detail=1&wh=/cyberchair/2023/icdm23/scripts/ws_submit.php">wi-lab system</a>.
+
+        By the unique ICDM tradition, all accepted workshop papers will be published in the dedicated ICDMW proceedings published by the IEEE Computer Society Press.
+
+        For more questions about the workshop and submissions, please send email to <a href="">kunpeng@pdx.edu</a>
+      </b>
+    </div>
+
+    <hr class="featurette-divider">
+
+    
+    <h1 id="date">Important Dates</h1>
+    <hr class="featurette-divider">
+    <div class="col-md-12">
+      <ul class="list-group list-group-flush" style="margin-top: -50px;">
+        <li class="list-group-item">Workshop Papers Submission: <b>September 15, 2023</b></li>
+        <li class="list-group-item">Notification of Workshop Papers Acceptance: <b>September 24, 2023</b></li>
+        <li class="list-group-item">Camera-ready Deadline and Copyright Form: <b>October 15, 2023</b></li>
+        <li class="list-group-item">Workshop Day: <b>December 1, 2023</b></li>
+      </ul>
+    </div>
+
+
+
+    <hr class="featurette-divider">
+
+    <h1 id="organizer">Organizing Committee</h1>
+
+    <hr class="featurette-divider">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row" style="margin-top: -50px;">
+      <h3>Steering Co-Chairs</h3>
+      <div class="col-lg-4" style="margin-top: 20px;">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+          <image xlink:href="./img/hui.jpeg" class="img-fluid img-thumbnail rounded-circle" width="140" height="140" clip-path="circle(70px at 70px 70px)"></image>
+        </svg>
+        <h2 class="fw-normal">Hui Xiong</h2>
+        <p>The Hong Kong University of Science and Technology (Guangzhou)</p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4" style="margin-top: 20px;">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+          <image xlink:href="./img/kumar_photo.jpg" class="img-fluid img-thumbnail rounded-circle" width="140" height="140" clip-path="circle(70px at 70px 70px)"></image>
+        </svg>
+        <h2 class="fw-normal">Vipin Kumar</h2>
+        <p>University of Minnesota</p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+    <div class="row" style="margin-top: -5px;">
+      <h3>Program Co-Chairs</h3>
+      <div class="col-lg-4" style="margin-top: 20px;">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+          <image xlink:href="./img/yanjie.jpg" class="img-fluid img-thumbnail rounded-circle" width="140" height="140" clip-path="circle(70px at 70px 70px)"></image>
+        </svg>
+        <h2 class="fw-normal">Yanjie Fu</h2>
+        <p>Arizona State University</p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4" style="margin-top: 20px;">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+          <image xlink:href="./img/Whang.jpg" class="img-fluid img-thumbnail rounded-circle" width="140" height="140" clip-path="circle(70px at 70px 70px)"></image>
+        </svg>
+        <h2 class="fw-normal">Steven Euijong Whang</h2>
+        <p>Korea Advanced Institute of Science & Technology</p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4" style="margin-top: 20px;">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+          <image xlink:href="./img/kunpeng_liu.jpg" class="img-fluid img-thumbnail rounded-circle" width="140" height="140" clip-path="circle(70px at 70px 70px)"></image>
+        </svg>
+        <h2 class="fw-normal">Kunpeng Liu</h2>
+        <p>Portland State University</p>
+      </div><!-- /.col-lg-4 -->
+    </div>
+
+
+    <div class="row" style="margin-top: -5px;">
+      <h3>Publicity Co-Chairs</h3>
+      <div class="col-lg-4" style="margin-top: 20px;">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+          <image xlink:href="./img/pengyang.jpg" class="img-fluid img-thumbnail rounded-circle" width="140" height="140" clip-path="circle(70px at 70px 70px)"></image>
+        </svg>
+        <h2 class="fw-normal">Pengyang Wang</h2>
+        <p>University of Macau</p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4" style="margin-top: 20px;">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+          <image xlink:href="./img/dongjie.jpg" class="img-fluid img-thumbnail rounded-circle" width="140" height="140" clip-path="circle(70px at 70px 70px)"></image>
+        </svg>
+        <h2 class="fw-normal">Dongjie Wang</h2>
+        <p>University of Central Florida</p>
+      </div><!-- /.col-lg-4 -->
+
+    </div><!-- /.row -->
+
+
+    <div class="row" style="margin-top: -5px;">
+      <h3>Local Co-Chairs</h3>
+      <div class="col-lg-4" style="margin-top: 20px;">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+          <image xlink:href="./img/pengyang.jpg" class="img-fluid img-thumbnail rounded-circle" width="140" height="140" clip-path="circle(70px at 70px 70px)"></image>
+        </svg>
+        <h2 class="fw-normal">Pengyang Wang</h2>
+        <p>University of Macau</p>
+      </div><!-- /.col-lg-4 -->
+
+      <!-- <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+          <image xlink:href="" class="img-fluid img-thumbnail rounded-circle" width="140" height="140" clip-path="circle(70px at 70px 70px)"></image>
+        </svg>
+        <h2 class="fw-normal"></h2>
+        <p>University of Central Florida</p>
+      </div> -->
+      <!-- /.col-lg-4 -->
+
+    </div><!-- /.row -->
+
+
+
+    <div class="row" style="margin-top: -5px;">
+      <h3>Web Co-Chairs</h3>
+      <div class="col-lg-4" style="margin-top: 20px;">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+          <image xlink:href="./img/dongjie.jpg" class="img-fluid img-thumbnail rounded-circle" width="140" height="140" clip-path="circle(70px at 70px 70px)"></image>
+        </svg>
+        <h2 class="fw-normal">Dongjie Wang</h2>
+        <p>University of Central Florida</p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4" style="margin-top: 20px;">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+          <image xlink:href="./img/fan.jpg" class="img-fluid img-thumbnail rounded-circle" width="140" height="140" clip-path="circle(70px at 70px 70px)"></image>
+        </svg>
+        <h2 class="fw-normal">Wei Fan</h2>
+        <p>University of Central Florida</p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4" style="margin-top: 20px;">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+          <image xlink:href="./img/meng.jpg" class="img-fluid img-thumbnail rounded-circle" width="140" height="140" clip-path="circle(70px at 70px 70px)"></image>
+        </svg>
+        <h2 class="fw-normal">Meng Xiao</h2>
+        <p>Chinese Academy of Sciences</p>
+      </div><!-- /.col-lg-4 -->
+
+    </div>
+
+
+    <hr class="featurette-divider">
+
+    <h1 id="accepted_paper">Accepted Paper</h1>
+    <hr class="featurette-divider">
+    <div class="col-md-12" style="margin-top: -50px;">
+      <ul class="list-group">
+        <li class="list-group-item">Xunxin Cai, Meng Xiao, Zhiyuan Ning, and Yuanchun Zhou, "Resolving the Imbalance Issue in Hierarchical Disciplinary Topic Inference via LLM-based Data Augmentation"</li>
+        <li class="list-group-item">Huiling Tu, Shuo Yu, Vidya Saikrishna, Feng Xia, and Karin Verspoor, "Deep Outdated Fact Detection in Knowledge Graphs"</li>
+        <li class="list-group-item">Aarash Feizi, Randall Balestriero, Arantxa Casanova, Adriana Romero-Soriano, and Reihaneh Rabbany, "Guided Nearest-Neighbor Contrastive Learning with Prior Knowledge For Hotel Recognition"</li>
+        <li class="list-group-item">Seungyoon Lee, Dahyun Jung, Chanjun Park, Seolhwa Lee, and Heuiseok Lim, "Alternative Speech: Complementary Method to Counter-Narrative for Better Discourse"</li>
+        <li class="list-group-item">Mansooreh Karami, David Mosallanezhad, Paras Sheth, and Huan Liu, "Silence Speaks Volumes: Re-weighting Techniques for Under-Represented Users in Fake News Detection"</li>
+      </ul>
+    
+    </div>
+
+    <hr class="featurette-divider">
+
+    <h1 id="speaker">Speakers</h1>
+    <hr class="featurette-divider">
+    <div class="col-md-12" style="margin-top: -50px;">
+      <ul class="list-group">
+        <li class="list-group-item">Dr. Jae-Gil Lee, Korea Advanced Institute of Science and Technology</li>
+        <li class="list-group-item">Dr. Chao Zhang, Georgia Institute of Technology</li>
+      </ul>
+    
+    </div>
+
+
+
+    <hr class="featurette-divider">
+
+    <h1 id="pc">Program Committee</h1>
+
+    <hr class="featurette-divider">
+
+    <div class="col-md-12" style="margin-top: -50px;">
+      <ul class="list-group">
+        <li class="list-group-item">Dr. Yong Ge, University of Arizona </li>
+        <li class="list-group-item">Dr. Hao Liu, The Hong Kong University of Science and Technology (Guangzhou)</li>
+        <li class="list-group-item">Dr. Kunpeng Liu, Portland State University</li>
+        <li class="list-group-item">Dr. Qi Liu, University of Science and Technology of China</li>
+        <li class="list-group-item">Dr. Yanchi Liu, NEC Labs America</li>
+        <li class="list-group-item">Dr. Leilei Sun, Beihang University</li>
+        <li class="list-group-item">Dr. Pengfei Wang,  Chinese Academy of Sciences</li>
+        <li class="list-group-item">Dr. Pengyang Wang, University of Macau</li>
+        <li class="list-group-item">Dr. Senzhang Wang, Central South University</li>
+        <li class="list-group-item">Dr. Keli Xiao, Stony Brook University</li>
+        <li class="list-group-item">Dr. Yang Yang, Nanjing University of Science and Technology</li>
+        <li class="list-group-item">Dr. Zijun Yao, University of Kansas</li>
+        <li class="list-group-item">Dr. Denghui Zhang, Rutgers University</li>
+        <li class="list-group-item">Dr. Wei Zhang, University of Central Florida</li>
+        <li class="list-group-item">Dr. Xi Zhang, Chinese Academy of Sciences</li>
+        <li class="list-group-item">Dr. Dongjie Wang, University of Central Florida </li>
+      </ul>
+    
+    </div>
+    <hr class="featurette-divider">
+
+    <h1 id="student_volunteer">Volunteers</h1>
+    <hr class="featurette-divider">
+    <div class="col-md-12" style="margin-top: -50px;">
+      <ul class="list-group">
+        <li class="list-group-item">Mr. Haihua Xu, University of Macau</li>
+        <li class="list-group-item">Ms. Qi Hao, University of Macau</li>
+      </ul>
+    
+    </div>
+
+    <hr class="featurette-divider">
+
+    <h1 id="pics">Photos</h1>
+    <hr class="featurette-divider">
+    <table>
+      <tr>
+      <td><img src="./img/pic1.jpeg" height="400" width="600" /></td>
+      <td><img src="./img/pic2.jpeg" height="400" width="600"  /></td>
+      </tr>
+      <tr>
+        <td><img src="./img/pic3.jpeg" height="400" width="600" /></td>
+        <td><img src="./img/pic4.jpeg" height="400" width="600"  /></td>
+        </tr>
+      <tr>
+        <td><img src="./img/pic5.jpeg" height="400" width="600" /></td>
+        <td><img src="./img/pic6.jpeg" height="400" width="600"  /></td>
+        </tr>
+
+    
+    
+    </table>
+
+    
+    </div>
+
+
+  <hr class="featurette-divider">
 
     <!-- /END THE FEATURETTES -->
 
   </div><!-- /.container -->
 
 
+
+
   <!-- FOOTER -->
   <footer class="container">
     <p class="float-end"><a href="#">Back to top</a></p>
-    <p>&copy; 2017–2023 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    <p>If you have any questions, feel free to send an email to <a href="">kunpeng@pdx.edu</a></p>
   </footer>
 </main>
 
