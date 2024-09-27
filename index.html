@@ -164,9 +164,6 @@
             <a class="nav-link" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#agenda">Agenda</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#topics">Topics</a>
           </li>
           <li class="nav-item">
@@ -177,6 +174,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#organizer">Organizing Committee</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#agenda">Agenda</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#accepted_paper">Accepted Paper</a>
@@ -253,231 +253,92 @@
       </div>
 
     </div>
-    <hr class="featurette-divider" >
-
-    <h1 id="agenda">Agenda</h1>
-
-    <hr class="featurette-divider" >
-    <style>
-      table,table tr th, table tr td { border:1px solid #000000; height: 50px;white-space: pre-line;}
-      table { width: 1100px; min-height: 25px; line-height: 25px; text-align: center; border-collapse: collapse;}
-      th:nth-child(2), td:nth-child(2) {
-            width: 300px;
-        }  
-      th:nth-child(3), td:nth-child(3) {
-            width: 130px;
-        }
-      th:nth-child(5), td:nth-child(5) {
-            width: 300px;
-        } 
-      th:nth-child(1), td:nth-child(1) {
-            width: 150px;
-        }    
-  </style>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-            // 获取北京时间
-            var beijingTime = getBeijingTime();
-            var beijingDate = getBeijingDate();
-
-            // 转换为用户本地时间
-            var userLocalTime = convertToUserTimeZone(beijingTime);
-            var userLocalDate = convertToUserTimeZone(beijingDate);
-
-            // 在表格中显示转换后的时间和日期
-            document.getElementById("dateTimeCell").textContent = beijingDate + " " + beijingTime + " /" + userLocalDate + " " + userLocalTime;
-        });
-
-        // 获取北京时间的函数
-        function getBeijingTime() {
-            var options = {
-                timeZone: 'Asia/Shanghai', // 北京时区
-                hour12: false,
-                hour: 'numeric',
-                minute: 'numeric',
-                second: 'numeric'
-            };
-
-            // 使用Date对象和时区信息获取北京时间
-            return new Date().toLocaleTimeString('en-US', options);
-        }
-
-        // 获取北京日期的函数
-        function getBeijingDate() {
-            var options = {
-                timeZone: 'Asia/Shanghai', // 北京时区
-                year: 'numeric',
-                month: 'numeric',
-                day: 'numeric'
-            };
-
-            // 使用Date对象和时区信息获取北京日期
-            return new Date().toLocaleDateString('en-US', options);
-        }
-
-        // 将时间和日期转换为用户本地时间的函数
-        function convertToUserTimeZone(dateTime) {
-            var userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-
-            var options = {
-                timeZone: userTimeZone,
-                hour12: false,
-                hour: 'numeric',
-                minute: 'numeric',
-                second: 'numeric',
-                year: 'numeric',
-                month: 'numeric',
-                day: 'numeric'
-            };
-
-            // 使用Date对象和时区信息将北京时间和日期转换为用户本地时间
-            return new Date(dateTime).toLocaleString('en-US', options);
-        }
-  </script>
-
-    <table border="1">
-      <tbody>
-        <tr>
-          <td  colspan="5">Date: Dec. 1st, Location: Room 6, Zoom link: https://zoom.us/j/91649466943, Password: 202312</td>
-      </tr>
-        <tr>
-          <td>Time (Beijing Time)</td>
-          <td>Title</td>
-          <td>Attendance</td>
-          <td>Format</td>
-          <td>Presenter/Author</td>
-        </tr>
-        <tr>
-          <td>8:00-8:05</td>
-          <td>Opening Remarks</td>
-          <td></td>
-          <td></td>
-          <td>Organizers</td>
-        </tr>
-        <tr>
-          <td>8:05-8:40</td>
-          <td>Keynote Presentation: Addressing Data Quality Issues with Data-Centric AI Approaches</td>
-          <td>Video</td>
-          <td>30 min + 5 min QA session</td>
-          <td>Jae-Gil Lee</td>
-        </tr>
-        <tr>
-          <td>8:40-9:15</td>
-          <td>Keynote Presentation: Data-Efficient Fine-Tuning and Adaptation of Language Models</td>
-          <td>Video</td>
-          <td>30 min + 5 min QA session</td>
-          <td>Chao Zhang</td>
-        </tr>
-        <tr>
-          <td>9:15-9:30</td>
-          <td>Resolving the Imbalance Issue in Hierarchical Disciplinary Topic Inference via LLM-based Data Augmentation</td>
-          <td>In-person</td>
-          <td>12 min + 3 min QA session</td>
-          <td>Xunxin Cai, Meng Xiao, Zhiyuan Ning, <br>and Yuanchun Zhou</td>
-        </tr>
-        <tr>
-          <td>9:30-9:45</td>
-          <td>Alternative Speech: Complementary<br>Method to Counter-Narrative<br>for Better Discourse</td>
-          <td>In-person</td>
-          <td>12 min + 3 min QA session</td>
-          <td>Seungyoon Lee, Dahyun Jung, Chanjun <br>Park, Seolhwa Lee, and Heuiseok Lim</td>
-        </tr>
-        <tr>
-          <td>9:45-10:00</td>
-          <td>Deep Outdated Fact Detection<br>in Knowledge Graphs</td>
-          <td>In-person</td>
-          <td>12 min + 3 min QA session</td>
-          <td>Huiling Tu, Shuo Yu, Vidya Saikrishna,<br>Feng Xia, and Karin Verspoor</td>
-        </tr>
-        <tr>
-          <td>10:00-10:15</td>
-          <td>Silence Speaks Volumes: Re-weighting<br>Techniques for Under-Represented<br>Users in Fake News Detection</td>
-          <td>Video</td>
-          <td>12 min + 3 min QA session</td>
-          <td>Mansooreh Karami, David Mosallanezhad, Paras Sheth, and Huan Liu</td>
-        </tr>
-        <tr>
-          <td>10:15-10:30</td>
-          <td>Guided Nearest-Neighbor Contrastive<br>Learning with Prior Knowledge<br>For Hotel Recognition</td>
-          <td>Video</td>
-          <td>12 min + 3 min QA session</td>
-          <td>Aarash Feizi, Randall Balestriero, Arantxa Casanova, Adriana Romero-Soriano, and Reihaneh Rabbany</td>
-        </tr>
-        <tr>
-          <td>10:30-10:35</td>
-          <td>Closing Remarks</td>
-          <td></td>
-          <td></td>
-          <td>Organizers</td>
-        </tr>
-      </tbody>
-      <colgroup>
-        <col>
-        <col>
-        <col>
-        <col>
-        <col>
-      </colgroup>
-    </table>
 
 
 
-    <hr class="featurette-divider" >
+    <hr class="featurette-divider">
 
-    <h1 id="topics">Topics</h1>
+<h1 id="topics">Topics</h1>
 
-    <hr class="featurette-divider" >
+<hr class="featurette-divider">
 
-    <div class="row featurette">
-      <div class="col-md-12">
-       <p style="margin-top: -50px;"> <b>We welcome a wide array of submissions focused on data-centric AI, encompassing topics such as theories, algorithms, applications, systems, and tools. These topics include but are not limited to:</b></p>
+<div class="row featurette">
+  <div class="col-md-12">
+    <p style="margin-top: -50px;"><b>We encourage submissions on a broad range of AI for Urban Planning. Topics of interest include but are not limited to theories, algorithms, applications, systems, and tools, such as:</b></p>
 
-        <ul class="list-group">
-            <li class="list-group-item list-group-item-primary"><b>Automated Data Science Methods</b>
-                <ul class="list-group list-group-numbered">
-                    <li class="list-group-item">Data cleaning, denoising, and interpolation</li>
-                    <li class="list-group-item">Feature selection and generation</li>
-                    <li class="list-group-item">Data refinement, feature-instance joint selection</li>
-                    <li class="list-group-item">Data quality improvement, representation learning, reconstruction</li>
-                    <li class="list-group-item">Outlier detection and removal</li>
-                </ul>
-            </li>
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-primary"><b>Representation and quantification of urban environment</b>
+        <ul class="list-group list-group-numbered">
+          <li class="list-group-item">Representation learning for spatio-temporal data</li>
+          <li class="list-group-item">Multimodal data fusion</li>
+          <li class="list-group-item">Graph neural networks in representing urban forms</li>
+          <li class="list-group-item">Multi-view learning</li>
+          <li class="list-group-item">Domain shift & generalization</li>
         </ul>
+      </li>
+    </ul>
 
-        <ul class="list-group" style="margin-top: 16px;">
-            <li class="list-group-item list-group-item-warning"><b>Tools and Methodologies for Expediting Open-source Dataset Preparation</b>
-                <ul class="list-group list-group-numbered">
-                    <li class="list-group-item">Time acceleration tools for sourcing and preparing high-quality data</li>
-                    <li class="list-group-item">Tools for consistent data labeling, data quality improvement</li>
-                    <li class="list-group-item">Tools for generating high-quality supervised learning training data</li>
-                    <li class="list-group-item">Tools for dataset control, high-level editing, searching public resources</li>
-                    <li class="list-group-item">Tools for dataset feedback incorporation, coverage understanding, editing</li>
-                    <li class="list-group-item">Dataset importers and exporters for easy data combination and consumption</li>
-                    <li class="list-group-item">System architectures and interfaces for dataset tool composition</li>
-                </ul>
-            </li>
-          </ul>
-
-          <ul class="list-group" style="margin-top: 16px;">
-            <li class="list-group-item list-group-item-danger"><b>Algorithms for Handling Limited Labeled Data and Label Efficiency</b>
-                <ul class="list-group list-group-numbered">
-                    <li class="list-group-item">Data selection techniques, semi-supervised learning, few-shot learning</li>
-                    <li class="list-group-item">Weak supervision methods, transfer learning, self-supervised learning approaches</li>
-                </ul>
-            </li>
-          </ul>
-
-          <ul class="list-group" style="margin-top: 16px;">
-            <li class="list-group-item list-group-item-success"><b>Algorithms for Dealing with Biased, Shifted, Drifted, and Out of Distribution Data</b>
-                <ul class="list-group list-group-numbered">
-                    <li class="list-group-item">Datasets for bias evaluation and analysis</li>
-                    <li class="list-group-item">Algorithms for automated bias elimination, model training with biased data</li>
-                </ul>
-            </li>
+    <ul class="list-group" style="margin-top: 16px;">
+      <li class="list-group-item list-group-item-warning"><b>Predictive modeling with urban data</b>
+        <ul class="list-group list-group-numbered">
+          <li class="list-group-item">Urban time series forecasting</li>
+          <li class="list-group-item">Spatio-temporal forecasting (e.g., energy, traffic, crowd flow)</li>
+          <li class="list-group-item">Demographic prediction</li>
+          <li class="list-group-item">City climate modeling</li>
         </ul>
+      </li>
+    </ul>
 
-      </div>
-    </div>
+    <ul class="list-group" style="margin-top: 16px;">
+      <li class="list-group-item list-group-item-danger"><b>Generative modeling, AIGC, and large models for urban planning</b>
+        <ul class="list-group list-group-numbered">
+          <li class="list-group-item">Urban form design</li>
+          <li class="list-group-item">Land use configuration</li>
+          <li class="list-group-item">Architecture design</li>
+          <li class="list-group-item">Landscape design</li>
+          <li class="list-group-item">Transportation system design (e.g., road network)</li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul class="list-group" style="margin-top: 16px;">
+      <li class="list-group-item list-group-item-success"><b>Evaluation and simulation</b>
+        <ul class="list-group list-group-numbered">
+          <li class="list-group-item">Reinforcement learning powered simulation</li>
+          <li class="list-group-item">LLM agent for evaluation and simulation (i.e., stakeholder role-play)</li>
+          <li class="list-group-item">Human-in-the-loop simulation</li>
+          <li class="list-group-item">LLM-in-the-loop simulation</li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul class="list-group" style="margin-top: 16px;">
+      <li class="list-group-item list-group-item-info"><b>Ethics of AI in urban planning</b>
+        <ul class="list-group list-group-numbered">
+          <li class="list-group-item">Fairness and bias</li>
+          <li class="list-group-item">Community engagement</li>
+          <li class="list-group-item">Transparency and accountability</li>
+          <li class="list-group-item">Data privacy</li>
+          <li class="list-group-item">Interpretability</li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul class="list-group" style="margin-top: 16px;">
+      <li class="list-group-item list-group-item-secondary"><b>Applications, systems, and tools</b>
+        <ul class="list-group list-group-numbered">
+          <li class="list-group-item">Urban digital twin</li>
+          <li class="list-group-item">AR, VR, and metaverse for urban planning</li>
+          <li class="list-group-item">Carbon neutrality</li>
+          <li class="list-group-item">Urban utility/resources allocation</li>
+          <li class="list-group-item">Planning support systems for policymakers</li>
+        </ul>
+      </li>
+    </ul>
+
+  </div>
+</div>
+
 
     <hr class="featurette-divider">
 
@@ -651,6 +512,172 @@
 
     </div>
 
+    <hr class="featurette-divider" >
+
+    <h1 id="agenda">Agenda</h1>
+
+    <hr class="featurette-divider" >
+    <style>
+      table,table tr th, table tr td { border:1px solid #000000; height: 50px;white-space: pre-line;}
+      table { width: 1100px; min-height: 25px; line-height: 25px; text-align: center; border-collapse: collapse;}
+      th:nth-child(2), td:nth-child(2) {
+            width: 300px;
+        }  
+      th:nth-child(3), td:nth-child(3) {
+            width: 130px;
+        }
+      th:nth-child(5), td:nth-child(5) {
+            width: 300px;
+        } 
+      th:nth-child(1), td:nth-child(1) {
+            width: 150px;
+        }    
+  </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+            // 获取北京时间
+            var beijingTime = getBeijingTime();
+            var beijingDate = getBeijingDate();
+
+            // 转换为用户本地时间
+            var userLocalTime = convertToUserTimeZone(beijingTime);
+            var userLocalDate = convertToUserTimeZone(beijingDate);
+
+            // 在表格中显示转换后的时间和日期
+            document.getElementById("dateTimeCell").textContent = beijingDate + " " + beijingTime + " /" + userLocalDate + " " + userLocalTime;
+        });
+
+        // 获取北京时间的函数
+        function getBeijingTime() {
+            var options = {
+                timeZone: 'Asia/Shanghai', // 北京时区
+                hour12: false,
+                hour: 'numeric',
+                minute: 'numeric',
+                second: 'numeric'
+            };
+
+            // 使用Date对象和时区信息获取北京时间
+            return new Date().toLocaleTimeString('en-US', options);
+        }
+
+        // 获取北京日期的函数
+        function getBeijingDate() {
+            var options = {
+                timeZone: 'Asia/Shanghai', // 北京时区
+                year: 'numeric',
+                month: 'numeric',
+                day: 'numeric'
+            };
+
+            // 使用Date对象和时区信息获取北京日期
+            return new Date().toLocaleDateString('en-US', options);
+        }
+
+        // 将时间和日期转换为用户本地时间的函数
+        function convertToUserTimeZone(dateTime) {
+            var userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+            var options = {
+                timeZone: userTimeZone,
+                hour12: false,
+                hour: 'numeric',
+                minute: 'numeric',
+                second: 'numeric',
+                year: 'numeric',
+                month: 'numeric',
+                day: 'numeric'
+            };
+
+            // 使用Date对象和时区信息将北京时间和日期转换为用户本地时间
+            return new Date(dateTime).toLocaleString('en-US', options);
+        }
+  </script>
+
+    <table border="1">
+      <tbody>
+        <tr>
+          <td  colspan="5">Date: Dec. 1st, Location: Room 6, Zoom link: https://zoom.us/j/91649466943, Password: 202312</td>
+      </tr>
+        <tr>
+          <td>Time (Beijing Time)</td>
+          <td>Title</td>
+          <td>Attendance</td>
+          <td>Format</td>
+          <td>Presenter/Author</td>
+        </tr>
+        <tr>
+          <td>8:00-8:05</td>
+          <td>Opening Remarks</td>
+          <td></td>
+          <td></td>
+          <td>Organizers</td>
+        </tr>
+        <tr>
+          <td>8:05-8:40</td>
+          <td>Keynote Presentation: Addressing Data Quality Issues with Data-Centric AI Approaches</td>
+          <td>Video</td>
+          <td>30 min + 5 min QA session</td>
+          <td>Jae-Gil Lee</td>
+        </tr>
+        <tr>
+          <td>8:40-9:15</td>
+          <td>Keynote Presentation: Data-Efficient Fine-Tuning and Adaptation of Language Models</td>
+          <td>Video</td>
+          <td>30 min + 5 min QA session</td>
+          <td>Chao Zhang</td>
+        </tr>
+        <tr>
+          <td>9:15-9:30</td>
+          <td>Resolving the Imbalance Issue in Hierarchical Disciplinary Topic Inference via LLM-based Data Augmentation</td>
+          <td>In-person</td>
+          <td>12 min + 3 min QA session</td>
+          <td>Xunxin Cai, Meng Xiao, Zhiyuan Ning, <br>and Yuanchun Zhou</td>
+        </tr>
+        <tr>
+          <td>9:30-9:45</td>
+          <td>Alternative Speech: Complementary<br>Method to Counter-Narrative<br>for Better Discourse</td>
+          <td>In-person</td>
+          <td>12 min + 3 min QA session</td>
+          <td>Seungyoon Lee, Dahyun Jung, Chanjun <br>Park, Seolhwa Lee, and Heuiseok Lim</td>
+        </tr>
+        <tr>
+          <td>9:45-10:00</td>
+          <td>Deep Outdated Fact Detection<br>in Knowledge Graphs</td>
+          <td>In-person</td>
+          <td>12 min + 3 min QA session</td>
+          <td>Huiling Tu, Shuo Yu, Vidya Saikrishna,<br>Feng Xia, and Karin Verspoor</td>
+        </tr>
+        <tr>
+          <td>10:00-10:15</td>
+          <td>Silence Speaks Volumes: Re-weighting<br>Techniques for Under-Represented<br>Users in Fake News Detection</td>
+          <td>Video</td>
+          <td>12 min + 3 min QA session</td>
+          <td>Mansooreh Karami, David Mosallanezhad, Paras Sheth, and Huan Liu</td>
+        </tr>
+        <tr>
+          <td>10:15-10:30</td>
+          <td>Guided Nearest-Neighbor Contrastive<br>Learning with Prior Knowledge<br>For Hotel Recognition</td>
+          <td>Video</td>
+          <td>12 min + 3 min QA session</td>
+          <td>Aarash Feizi, Randall Balestriero, Arantxa Casanova, Adriana Romero-Soriano, and Reihaneh Rabbany</td>
+        </tr>
+        <tr>
+          <td>10:30-10:35</td>
+          <td>Closing Remarks</td>
+          <td></td>
+          <td></td>
+          <td>Organizers</td>
+        </tr>
+      </tbody>
+      <colgroup>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+      </colgroup>
+    </table>
 
     <hr class="featurette-divider">
 
@@ -714,8 +741,7 @@
     <hr class="featurette-divider">
     <div class="col-md-12" style="margin-top: -50px;">
       <ul class="list-group">
-        <li class="list-group-item">Mr. Haihua Xu, University of Macau</li>
-        <li class="list-group-item">Ms. Qi Hao, University of Macau</li>
+        <li class="list-group-item">Mr. Jianpeng Zhao, University of Macau</li>
       </ul>
     
     </div>
@@ -724,7 +750,7 @@
 
     <h1 id="pics">Photos</h1>
     <hr class="featurette-divider">
-    <p style="font-size: 24px; text-align: center; margin-top: 20px;">Coming Soon</p>
+    <p class="lead" style="margin-top: -50px; text-align: center; font-size: 32px; font-weight: bold;">Coming Soon</p>
 
 
     
